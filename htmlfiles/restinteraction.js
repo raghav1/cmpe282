@@ -310,7 +310,7 @@ function pay(){
 
 
 var amount=encodeURIComponent(document.getElementById("amount").value);
-var cardno=encodeURIComponent(document.getElementById("cardno").value);
+var cardno=encodeURIComponent(document.getElementById("card").value);
 
 
 
