@@ -41,19 +41,18 @@ req.onreadystatechange = function() {
 
   if(JSON.parse(req.responseText).message!=undefined)
   {
-    alert("asdasadsasgin");
+   // alert("asdasadsasgin");
 
   }
   else{
 
     localStorage.setItem('data',req.responseText);
-    alert(JSON.parse(localStorage.getItem('data')).id);
+   // alert(JSON.parse(localStorage.getItem('data')).id);
     window.location="main.html"
   }
   // ... and use it as needed by your app.
 }
 }
-
 function create(){
 
 var firstname=encodeURIComponent(document.getElementById("Firstname").value);
@@ -81,7 +80,7 @@ req.onreadystatechange = function() {
 
   if(JSON.parse(req.responseText).message!=undefined)
   {
-    alert("asdasadsasgin");
+ //   alert("asdasadsasgin");
 
   }
   else{
@@ -120,12 +119,12 @@ req.onreadystatechange = function() {
   
   if(JSON.parse(req.responseText).message!=undefined)
   {
-    alert("asdasadsasgin");
+  //  alert("asdasadsasgin");
 
   }
   else{
     var data=JSON.parse(req.responseText);
-    alert(data.Items);
+   // alert(data.Items);
    var output="";
 var total=0;
 for (var i in data.Items) {
@@ -161,7 +160,7 @@ req.onreadystatechange = function() {
 
   if(JSON.parse(req.responseText).message!=undefined)
   {
-    alert("asdasadsasgin");
+    //alert("asdasadsasgin");
 
   }
   else{
@@ -200,7 +199,7 @@ req.onreadystatechange = function() {
   var act='/user/cart/'+JSON.parse(localStorage.getItem("data"))[0].id;
   if(JSON.parse(req.responseText).message!=undefined)
   {
-    alert("asdasadsasgin");
+   // alert("asdasadsasgin");
 
   }
   else{
@@ -243,7 +242,7 @@ req.onreadystatechange = function() {
 
   if(JSON.parse(req.responseText).message!=undefined)
   {
-    alert("asdasadsasgin");
+  //  alert("asdasadsasgin");
 
   }
   else{
@@ -314,7 +313,7 @@ var cardno=encodeURIComponent(document.getElementById("card").value);
 
 
 
-var parameters="&amount="+amount+"&cardno="+cardno;
+var parameters="&amount="+amount+"&cardno="+cardno+"&id="+JSON.parse(localStorage.getItem("data"))[0].id;
 var req = createRequest(); // defined above
 // Create the callback:
 
@@ -336,7 +335,7 @@ req.onreadystatechange = function() {
 
   if(JSON.parse(req.responseText).message!=undefined)
   {
-    alert("asdasadsasgin");
+ //   alert("asdasadsasgin");
 
   }
   else{
