@@ -342,8 +342,8 @@ req.onreadystatechange = function() {
 
    
   }
-  alert("Thanks For Shopping With Us")
-  window.location("main.html")
+  alert("Thanks For Shopping With Us");
+  window.location("main.html");
   // ... and use it as needed by your app.
 }
 }
