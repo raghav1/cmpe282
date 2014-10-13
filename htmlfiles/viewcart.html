@@ -19,7 +19,24 @@
     <div id="itemcart">
     
 </div>
+</div>
+</br></br></br>
 <div id="total"></div>
+	<form >
+      <div class="cc">
+    <h1>Payment details</h1>
+    <div class="payment">
+    <table style="width:100%">
+     
+       <tr> <p>Amount<input type="hidden" name="Amount" id="amount" value="" placeholder="Amount"></p></tr>
+         <tr><p>Card<input type="text" name="card" id="card" value=""></p></tr>
+         
+        <tr>  <input type="button" value="Pay" onClick="pay()"style="background-color:yellow;height:25px;width:100px;">
+           <input type="button" value="Cancel" onClick="window.location='/main.html'"style="background-color:yellow;height:25px;width:100px;"></tr>
+         </table>
+</div>
+</div>
+          </form>
 <script>itemcart();</script>
 </body>
 

@@ -134,8 +134,9 @@ for (var i in data.Items) {
 total=total+parseFloat(data.Items[i].quantity)*parseFloat(data.Items[i].cost);
 }
 document.getElementById("itemcart").innerHTML=output;
-document.getElementById("total").innerHTML=total;
-  
+document.getElementById("total").innerHTML="Your total is :"+total;
+document.getElementById("amount").innerHTML=total;
+
   }}
 
 }
